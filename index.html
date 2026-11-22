@@ -1,0 +1,1368 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jxx cc最新入口 - 官方视频门户_品牌内容生态与创作者社区</title>
+<meta name="description" content="jxx cc最新入口官方网站，专注原创高清视频内容生态，汇聚优质创作者与企业品牌故事，提供专业、值得信赖的视频内容平台与社区服务。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a2b4a'/%3E%3Cpath d='M22 18l24 14-24 14z' fill='%23ff5b3d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jxx-ink:#16233a;
+  --jxx-ink-soft:#3d4c66;
+  --jxx-muted:#6b788f;
+  --jxx-line:#e2e6ee;
+  --jxx-bg:#f5f7fb;
+  --jxx-card:#ffffff;
+  --jxx-blue:#1f4fd8;
+  --jxx-blue-deep:#12307a;
+  --jxx-accent:#ff5b3d;
+  --jxx-accent-soft:#ffe9e4;
+  --jxx-gold:#f2a83b;
+  --jxx-radius:16px;
+  --jxx-shadow:0 8px 30px rgba(22,35,58,.08);
+  --jxx-header-h:112px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--jxx-header-h)}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  background:var(--jxx-bg);
+  color:var(--jxx-ink);
+  line-height:1.75;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.jxx-container{width:min(1180px,92vw);margin:0 auto}
+.jxx-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.jxx-skip{position:absolute;left:-999px;top:0;background:var(--jxx-blue);color:#fff;padding:10px 18px;z-index:200;border-radius:0 0 8px 0}
+.jxx-skip:focus{left:0}
+
+/* ============ 吸顶公告 + 页头 ============ */
+.jxx-topbar{
+  position:sticky;top:0;z-index:120;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--jxx-line);
+}
+.jxx-announce{
+  background:linear-gradient(90deg,#12307a,#1f4fd8 55%,#2f6bf0);
+  color:#fff;font-size:13px;
+}
+.jxx-announce-inner{
+  display:flex;align-items:center;gap:12px;
+  padding:8px 0;overflow:hidden;
+}
+.jxx-announce-tag{
+  flex:none;background:var(--jxx-accent);color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:.08em;
+  padding:2px 8px;border-radius:999px;
+}
+.jxx-announce-track{display:flex;gap:34px;white-space:nowrap;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 96%,transparent)}
+.jxx-announce-track span{opacity:.94}
+.jxx-announce-track b{color:#ffd9a8;font-weight:600}
+.jxx-header{background:transparent}
+.jxx-header-inner{
+  display:flex;align-items:center;gap:22px;padding:14px 0;
+}
+.jxx-brand{display:flex;align-items:center;gap:11px;flex:none}
+.jxx-logo{
+  width:42px;height:42px;border-radius:12px;flex:none;
+  background:linear-gradient(140deg,#1f4fd8,#12307a);
+  display:grid;place-items:center;box-shadow:0 6px 16px rgba(31,79,216,.32);
+}
+.jxx-logo svg{width:22px;height:22px}
+.jxx-brand-text strong{display:block;font-size:19px;letter-spacing:.02em;line-height:1.2}
+.jxx-brand-text small{display:block;font-size:11px;color:var(--jxx-muted);letter-spacing:.14em}
+.jxx-nav{display:flex;gap:4px;margin-left:auto}
+.jxx-nav a{
+  font-size:14px;color:var(--jxx-ink-soft);padding:8px 12px;border-radius:9px;
+  transition:background .2s,color .2s;white-space:nowrap;
+}
+.jxx-nav a:hover,.jxx-nav a:focus-visible{background:#eef2fc;color:var(--jxx-blue)}
+.jxx-search{
+  display:flex;align-items:center;gap:6px;
+  background:#eef1f7;border:1px solid transparent;border-radius:999px;
+  padding:6px 6px 6px 14px;width:210px;transition:border-color .2s,background .2s;
+}
+.jxx-search:focus-within{border-color:var(--jxx-blue);background:#fff}
+.jxx-search input{border:none;background:transparent;outline:none;font-size:13px;width:100%;color:var(--jxx-ink)}
+.jxx-search button{
+  flex:none;background:var(--jxx-blue);color:#fff;border-radius:999px;
+  font-size:12px;padding:5px 12px;
+}
+.jxx-search-hint{
+  font-size:12px;color:var(--jxx-blue);padding:2px 2px 0;
+}
+.jxx-menu-btn{
+  display:none;width:42px;height:42px;border-radius:11px;border:1px solid var(--jxx-line);
+  align-items:center;justify-content:center;flex:none;background:#fff;
+}
+.jxx-menu-btn span{display:block;width:18px;height:2px;background:var(--jxx-ink);position:relative}
+.jxx-menu-btn span::before,.jxx-menu-btn span::after{
+  content:"";position:absolute;left:0;width:18px;height:2px;background:var(--jxx-ink);transition:transform .25s;
+}
+.jxx-menu-btn span::before{top:-6px}
+.jxx-menu-btn span::after{top:6px}
+.jxx-menu-btn[aria-expanded="true"] span{background:transparent}
+.jxx-menu-btn[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.jxx-menu-btn[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* ============ 首屏 6:4 大幅图文 ============ */
+.jxx-hero{padding:44px 0 10px}
+.jxx-hero-grid{
+  display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);
+  gap:40px;align-items:center;
+}
+.jxx-hero-copy .jxx-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.16em;color:var(--jxx-blue);
+  background:#e8eefc;padding:5px 12px;border-radius:999px;font-weight:600;
+}
+.jxx-hero h1{
+  font-size:clamp(30px,4.4vw,52px);line-height:1.16;letter-spacing:-.01em;
+  margin:18px 0 14px;font-weight:800;
+}
+.jxx-hero h1 em{font-style:normal;color:var(--jxx-blue);position:relative}
+.jxx-hero h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:4px;height:10px;
+  background:var(--jxx-accent-soft);z-index:-1;border-radius:4px;
+}
+.jxx-hero-lead{font-size:16px;color:var(--jxx-ink-soft);max-width:52ch}
+.jxx-hero-intro{
+  margin-top:16px;font-size:14px;color:var(--jxx-muted);line-height:1.85;
+  border-left:3px solid var(--jxx-blue);padding-left:14px;max-width:56ch;
+}
+.jxx-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.jxx-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 22px;border-radius:11px;font-size:14px;font-weight:600;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.jxx-btn-primary{background:var(--jxx-blue);color:#fff;box-shadow:0 8px 20px rgba(31,79,216,.26)}
+.jxx-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(31,79,216,.34)}
+.jxx-btn-ghost{background:#fff;color:var(--jxx-ink);border:1px solid var(--jxx-line)}
+.jxx-btn-ghost:hover{border-color:var(--jxx-blue);color:var(--jxx-blue)}
+.jxx-btn-accent{background:var(--jxx-accent);color:#fff;box-shadow:0 8px 20px rgba(255,91,61,.24)}
+.jxx-btn-accent:hover{transform:translateY(-2px)}
+.jxx-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;margin-top:30px;
+}
+.jxx-stat{
+  background:#fff;border:1px solid var(--jxx-line);border-radius:13px;
+  padding:13px 14px;
+}
+.jxx-stat b{display:block;font-size:22px;color:var(--jxx-blue-deep);line-height:1.2;letter-spacing:-.01em}
+.jxx-stat span{font-size:12px;color:var(--jxx-muted)}
+.jxx-hero-visual{position:relative}
+.jxx-hero-frame{
+  border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(18,48,122,.22);
+  aspect-ratio:4/4.6;background:#0e1b34;
+}
+.jxx-hero-frame img{width:100%;height:100%;object-fit:cover}
+.jxx-hero-badge{
+  position:absolute;left:-16px;bottom:26px;background:#fff;border-radius:14px;
+  padding:12px 16px;box-shadow:var(--jxx-shadow);display:flex;align-items:center;gap:11px;
+  max-width:88%;
+}
+.jxx-hero-badge .dot{
+  width:34px;height:34px;border-radius:50%;background:var(--jxx-accent-soft);
+  display:grid;place-items:center;color:var(--jxx-accent);flex:none;font-weight:800;
+}
+.jxx-hero-badge b{display:block;font-size:13px}
+.jxx-hero-badge span{font-size:11px;color:var(--jxx-muted)}
+
+/* ============ 通用区块 ============ */
+.jxx-section{padding:56px 0}
+.jxx-section-head{margin-bottom:28px}
+.jxx-kicker{
+  font-size:12px;letter-spacing:.18em;color:var(--jxx-accent);font-weight:700;
+  text-transform:uppercase;display:block;margin-bottom:8px;
+}
+.jxx-section-head h2{
+  font-size:clamp(22px,3vw,30px);line-height:1.3;letter-spacing:-.01em;
+}
+.jxx-section-head p{color:var(--jxx-muted);font-size:14px;margin-top:8px;max-width:70ch}
+.jxx-head-row{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.jxx-text-link{font-size:13px;color:var(--jxx-blue);font-weight:600;white-space:nowrap}
+.jxx-text-link:hover{text-decoration:underline}
+
+/* ============ 焦点内容 ============ */
+.jxx-focus-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:24px}
+.jxx-focus-main{
+  background:var(--jxx-card);border-radius:var(--jxx-radius);overflow:hidden;
+  border:1px solid var(--jxx-line);box-shadow:var(--jxx-shadow);
+  display:flex;flex-direction:column;
+}
+.jxx-focus-thumb{aspect-ratio:16/9;overflow:hidden;position:relative;background:#12307a}
+.jxx-focus-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.jxx-focus-main:hover .jxx-focus-thumb img{transform:scale(1.04)}
+.jxx-play{
+  position:absolute;inset:0;margin:auto;width:56px;height:56px;border-radius:50%;
+  background:rgba(255,255,255,.9);display:grid;place-items:center;
+  box-shadow:0 8px 24px rgba(0,0,0,.24);
+}
+.jxx-play::after{content:"";border-left:16px solid var(--jxx-blue-deep);border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.jxx-focus-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.jxx-tagrow{display:flex;flex-wrap:wrap;gap:7px}
+.jxx-tag{
+  font-size:11px;color:var(--jxx-blue);background:#eaf0fd;border-radius:999px;
+  padding:3px 10px;font-weight:600;
+}
+.jxx-tag--accent{color:#c33d20;background:var(--jxx-accent-soft)}
+.jxx-focus-body h3{font-size:20px;line-height:1.4}
+.jxx-focus-body p{font-size:13.5px;color:var(--jxx-muted)}
+.jxx-meta{
+  display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--jxx-muted);
+  align-items:center;
+}
+.jxx-meta strong{color:var(--jxx-ink-soft);font-weight:600}
+.jxx-ops{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
+.jxx-op{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:12px;border:1px solid var(--jxx-line);border-radius:999px;
+  padding:5px 11px;background:#fff;color:var(--jxx-ink-soft);transition:all .18s;
+}
+.jxx-op:hover{border-color:var(--jxx-blue);color:var(--jxx-blue)}
+.jxx-op.is-on{background:#eaf0fd;border-color:var(--jxx-blue);color:var(--jxx-blue)}
+.jxx-op.is-fav{background:var(--jxx-accent-soft);border-color:var(--jxx-accent);color:var(--jxx-accent)}
+.jxx-focus-list{display:flex;flex-direction:column;gap:14px}
+.jxx-focus-item{
+  background:#fff;border:1px solid var(--jxx-line);border-radius:13px;
+  padding:15px 17px;display:flex;flex-direction:column;gap:7px;
+  transition:box-shadow .2s,transform .2s,border-color .2s;
+}
+.jxx-focus-item:hover{box-shadow:var(--jxx-shadow);transform:translateY(-2px);border-color:#c9d6f2}
+.jxx-focus-item h3{font-size:15.5px;line-height:1.45}
+.jxx-focus-item p{font-size:12.5px;color:var(--jxx-muted)}
+.jxx-focus-item .jxx-meta{font-size:11.5px}
+
+/* ============ 热门视频列表 ============ */
+.jxx-video-wrap{background:#fff;border:1px solid var(--jxx-line);border-radius:20px;padding:8px 22px;box-shadow:var(--jxx-shadow)}
+.jxx-video-row{
+  display:grid;grid-template-columns:34px minmax(0,1fr) auto;
+  gap:16px;align-items:center;padding:18px 0;
+  border-bottom:1px dashed var(--jxx-line);
+}
+.jxx-video-row:last-child{border-bottom:none}
+.jxx-rank{
+  font-size:17px;font-weight:800;color:#b9c4d8;font-variant-numeric:tabular-nums;
+  text-align:center;
+}
+.jxx-video-row:nth-child(1) .jxx-rank,
+.jxx-video-row:nth-child(2) .jxx-rank,
+.jxx-video-row:nth-child(3) .jxx-rank{color:var(--jxx-accent)}
+.jxx-video-main{min-width:0}
+.jxx-video-main h3{font-size:15.5px;line-height:1.5;margin-bottom:4px}
+.jxx-video-main h3 a:hover{color:var(--jxx-blue)}
+.jxx-video-main p{font-size:12.5px;color:var(--jxx-muted);margin-bottom:6px}
+.jxx-video-side{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.jxx-video-side .jxx-meta{justify-content:flex-end;font-size:11.5px;gap:10px}
+.jxx-video-thumb{
+  width:112px;aspect-ratio:16/9;border-radius:9px;overflow:hidden;flex:none;background:#12307a;
+}
+.jxx-video-thumb img{width:100%;height:100%;object-fit:cover}
+.jxx-video-row--thumb{grid-template-columns:34px minmax(0,1fr);}
+.jxx-video-row--thumb .jxx-inline{display:flex;gap:14px;align-items:flex-start}
+.jxx-video-row--thumb .jxx-video-inner{flex:1;min-width:0}
+.jxx-video-ops{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+.jxx-search-note{
+  font-size:13px;color:var(--jxx-blue);background:#eaf0fd;border-radius:10px;
+  padding:9px 14px;margin-bottom:16px;display:none;
+}
+.jxx-search-note.is-show{display:block}
+.jxx-video-row.is-hide{display:none}
+
+/* ============ 专题企划 ============ */
+.jxx-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.jxx-topic{
+  background:#fff;border:1px solid var(--jxx-line);border-radius:16px;
+  padding:22px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;
+}
+.jxx-topic:hover{transform:translateY(-3px);box-shadow:var(--jxx-shadow)}
+.jxx-topic::before{
+  content:"";position:absolute;left:0;top:0;width:100%;height:4px;
+  background:linear-gradient(90deg,var(--jxx-blue),var(--jxx-accent));
+}
+.jxx-topic-status{
+  display:inline-block;font-size:11px;font-weight:700;color:#1b7a4b;background:#e3f6ec;
+  border-radius:999px;padding:3px 10px;margin-bottom:10px;
+}
+.jxx-topic-status.is-soon{color:#a06a12;background:#fdf1dc}
+.jxx-topic h3{font-size:17px;margin-bottom:8px;line-height:1.4}
+.jxx-topic p{font-size:13px;color:var(--jxx-muted);margin-bottom:14px}
+.jxx-topic ol{display:flex;flex-direction:column;gap:9px}
+.jxx-topic ol li{
+  font-size:13px;color:var(--jxx-ink-soft);display:flex;gap:9px;line-height:1.5;
+}
+.jxx-topic ol li::before{
+  content:attr(data-idx);flex:none;width:19px;height:19px;border-radius:6px;
+  background:#eef2fc;color:var(--jxx-blue);font-size:11px;font-weight:700;
+  display:grid;place-items:center;margin-top:2px;
+}
+
+/* ============ 关键词深度解析 ============ */
+.jxx-parse{background:#fff;border-radius:22px;border:1px solid var(--jxx-line);padding:38px clamp(20px,4vw,50px);box-shadow:var(--jxx-shadow)}
+.jxx-parse h2{margin-bottom:6px}
+.jxx-parse .jxx-parse-lead{color:var(--jxx-muted);font-size:14px;margin-bottom:22px}
+.jxx-parse h3{
+  font-size:18px;margin:26px 0 10px;padding-left:13px;position:relative;line-height:1.4;
+}
+.jxx-parse h3::before{
+  content:"";position:absolute;left:0;top:5px;bottom:5px;width:4px;border-radius:3px;
+  background:linear-gradient(180deg,var(--jxx-blue),var(--jxx-accent));
+}
+.jxx-parse p{font-size:14.5px;color:var(--jxx-ink-soft);margin-bottom:12px;text-align:justify}
+.jxx-parse .jxx-hl{color:var(--jxx-blue-deep);font-weight:600}
+.jxx-parse-figure{margin:22px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.jxx-parse-figure figure{border-radius:13px;overflow:hidden;border:1px solid var(--jxx-line)}
+.jxx-parse-figure img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.jxx-parse-figure figcaption{font-size:12px;color:var(--jxx-muted);padding:8px 12px;background:#fafbfe}
+
+/* ============ 创作者双列简介 ============ */
+.jxx-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.jxx-author-card{
+  background:#fff;border:1px solid var(--jxx-line);border-radius:16px;
+  padding:20px;display:flex;gap:16px;transition:box-shadow .2s,transform .2s;
+}
+.jxx-author-card:hover{box-shadow:var(--jxx-shadow);transform:translateY(-2px)}
+.jxx-avatar{
+  width:62px;height:62px;border-radius:50%;flex:none;overflow:hidden;
+  display:grid;place-items:center;font-size:22px;font-weight:800;color:#fff;
+  letter-spacing:-.02em;
+}
+.jxx-avatar svg{width:100%;height:100%}
+.jxx-author-body{min-width:0}
+.jxx-author-body h3{font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.jxx-author-badge{font-size:10px;background:var(--jxx-accent-soft);color:#c33d20;border-radius:999px;padding:2px 8px;font-weight:700}
+.jxx-author-field{font-size:12px;color:var(--jxx-blue);font-weight:600;margin:3px 0 7px}
+.jxx-author-body p{font-size:12.8px;color:var(--jxx-muted);line-height:1.7}
+.jxx-author-nums{display:flex;gap:16px;margin-top:10px;font-size:12px;color:var(--jxx-muted)}
+.jxx-author-nums b{color:var(--jxx-ink);font-weight:700}
+.jxx-author-card .jxx-op{margin-top:11px}
+
+/* ============ 评论区（引用摘录 + 短评列表） ============ */
+.jxx-comment-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:22px;align-items:start}
+.jxx-quote{
+  background:linear-gradient(150deg,#12307a,#1f4fd8);color:#fff;border-radius:18px;
+  padding:26px;position:relative;overflow:hidden;
+}
+.jxx-quote::after{
+  content:"”";position:absolute;right:14px;bottom:-26px;font-size:150px;
+  color:rgba(255,255,255,.12);font-family:Georgia,serif;line-height:1;
+}
+.jxx-quote p{font-size:15px;line-height:1.8;position:relative;z-index:1}
+.jxx-quote footer{margin-top:16px;font-size:12.5px;opacity:.82}
+.jxx-quote-stats{display:flex;gap:18px;margin-top:18px;font-size:12px;opacity:.9}
+.jxx-comment-list{display:flex;flex-direction:column;gap:12px}
+.jxx-comment{
+  background:#fff;border:1px solid var(--jxx-line);border-radius:13px;padding:14px 17px;
+}
+.jxx-comment-head{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+.jxx-comment-ava{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:800;color:#fff;flex:none}
+.jxx-comment-head b{font-size:13px}
+.jxx-comment-head span{font-size:11px;color:var(--jxx-muted)}
+.jxx-comment p{font-size:13.2px;color:var(--jxx-ink-soft)}
+.jxx-stars{color:var(--jxx-gold);font-size:12px;letter-spacing:1px;margin-left:auto}
+
+/* ============ 企业动态 ============ */
+.jxx-news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.jxx-news{
+  background:#fff;border:1px solid var(--jxx-line);border-radius:15px;
+  padding:20px;display:flex;flex-direction:column;gap:9px;transition:border-color .2s,box-shadow .2s;
+}
+.jxx-news:hover{border-color:#c9d6f2;box-shadow:var(--jxx-shadow)}
+.jxx-news time{font-size:11.5px;letter-spacing:.06em;color:var(--jxx-accent);font-weight:700}
+.jxx-news h3{font-size:15.5px;line-height:1.45}
+.jxx-news p{font-size:12.8px;color:var(--jxx-muted)}
+
+/* ============ 合作墙 + FAQ ============ */
+.jxx-pair{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:26px;align-items:start}
+.jxx-partners{background:#fff;border:1px solid var(--jxx-line);border-radius:18px;padding:24px}
+.jxx-partners h3{font-size:16px;margin-bottom:14px}
+.jxx-partner-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.jxx-partner{
+  border:1px dashed var(--jxx-line);border-radius:11px;padding:13px 12px;
+  font-size:12.5px;text-align:center;color:var(--jxx-ink-soft);background:#fbfcfe;
+  transition:all .2s;
+}
+.jxx-partner:hover{border-color:var(--jxx-blue);color:var(--jxx-blue);border-style:solid}
+.jxx-partner b{display:block;font-size:13.5px;color:var(--jxx-ink);margin-bottom:2px}
+.jxx-faq{background:#fff;border:1px solid var(--jxx-line);border-radius:18px;padding:24px}
+.jxx-faq h3{font-size:16px;margin-bottom:12px}
+.jxx-faq details{border-bottom:1px solid var(--jxx-line);padding:12px 0}
+.jxx-faq details:last-child{border-bottom:none}
+.jxx-faq summary{
+  font-size:14px;font-weight:600;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:flex-start;
+}
+.jxx-faq summary::-webkit-details-marker{display:none}
+.jxx-faq summary::after{
+  content:"+";flex:none;width:20px;height:20px;border-radius:50%;
+  background:#eef2fc;color:var(--jxx-blue);display:grid;place-items:center;
+  font-size:15px;line-height:1;transition:transform .2s;
+}
+.jxx-faq details[open] summary::after{content:"−";transform:rotate(180deg)}
+.jxx-faq p{font-size:13px;color:var(--jxx-muted);margin-top:9px;line-height:1.75}
+
+/* ============ 投稿 CTA ============ */
+.jxx-cta{
+  background:linear-gradient(120deg,#0e1b34,#1f4fd8 70%,#2f6bf0);
+  border-radius:22px;padding:44px clamp(22px,4vw,50px);color:#fff;
+  display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr);
+  gap:30px;align-items:center;position:relative;overflow:hidden;
+}
+.jxx-cta::after{
+  content:"";position:absolute;width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,91,61,.5),transparent 70%);
+  right:-70px;top:-80px;
+}
+.jxx-cta h2{font-size:clamp(21px,2.6vw,28px);margin-bottom:10px;line-height:1.35}
+.jxx-cta p{font-size:14px;opacity:.86;max-width:56ch}
+.jxx-cta-actions{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:1}
+.jxx-cta .jxx-btn-ghost{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.36)}
+.jxx-cta .jxx-btn-ghost:hover{background:rgba(255,255,255,.22);color:#fff}
+
+/* ============ 页脚 ============ */
+.jxx-footer{background:#0e1b34;color:#c3cde0;margin-top:60px;padding:52px 0 0}
+.jxx-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+.jxx-footer h4{color:#fff;font-size:14px;margin-bottom:14px;letter-spacing:.02em}
+.jxx-footer p,.jxx-footer li{font-size:12.8px;line-height:1.85;color:#93a2bb}
+.jxx-footer li a:hover{color:#fff}
+.jxx-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.jxx-footer-brand .jxx-logo{width:36px;height:36px;border-radius:10px}
+.jxx-footer-brand strong{color:#fff;font-size:17px}
+.jxx-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);margin-top:38px;padding:18px 0;
+  font-size:12px;color:#7d8ca6;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+
+/* ============ 悬浮交互 ============ */
+.jxx-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:var(--jxx-ink);color:#fff;font-size:13px;padding:11px 20px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:all .3s;z-index:300;box-shadow:0 12px 30px rgba(0,0,0,.24);
+  max-width:86vw;text-align:center;
+}
+.jxx-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.jxx-top-btn{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:14px;
+  background:#fff;border:1px solid var(--jxx-line);box-shadow:var(--jxx-shadow);
+  display:grid;place-items:center;color:var(--jxx-blue);z-index:150;
+  opacity:0;pointer-events:none;transition:all .25s;
+}
+.jxx-top-btn.is-show{opacity:1;pointer-events:auto}
+.jxx-top-btn:hover{background:var(--jxx-blue);color:#fff}
+.jxx-modal{
+  position:fixed;inset:0;z-index:400;display:none;align-items:center;justify-content:center;
+  background:rgba(14,27,52,.55);padding:20px;backdrop-filter:blur(3px);
+}
+.jxx-modal.is-open{display:flex}
+.jxx-modal-box{
+  background:#fff;border-radius:18px;width:min(520px,100%);padding:26px;
+  max-height:86vh;overflow:auto;box-shadow:0 30px 70px rgba(0,0,0,.3);
+}
+.jxx-modal-box h3{font-size:18px;margin-bottom:8px}
+.jxx-modal-box p{font-size:13.5px;color:var(--jxx-muted);margin-bottom:16px}
+.jxx-modal-box label{display:block;font-size:12.5px;font-weight:600;margin-bottom:6px}
+.jxx-modal-box input,.jxx-modal-box textarea{
+  width:100%;border:1px solid var(--jxx-line);border-radius:10px;padding:10px 12px;
+  font-size:13.5px;font-family:inherit;outline:none;margin-bottom:13px;background:#fbfcfe;
+}
+.jxx-modal-box input:focus,.jxx-modal-box textarea:focus{border-color:var(--jxx-blue);background:#fff}
+.jxx-modal-close{
+  float:right;width:32px;height:32px;border-radius:50%;background:#eef2fc;color:var(--jxx-ink);
+  font-size:17px;line-height:1;display:grid;place-items:center;
+}
+
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .jxx-hero-grid{grid-template-columns:1fr;gap:28px}
+  .jxx-hero-visual{order:-1}
+  .jxx-hero-frame{aspect-ratio:16/10}
+  .jxx-hero-badge{left:14px;bottom:14px}
+  .jxx-focus-grid{grid-template-columns:1fr}
+  .jxx-topic-grid{grid-template-columns:1fr 1fr}
+  .jxx-news-grid{grid-template-columns:1fr 1fr}
+  .jxx-pair{grid-template-columns:1fr}
+  .jxx-cta{grid-template-columns:1fr}
+  .jxx-footer-grid{grid-template-columns:1fr 1fr}
+  .jxx-comment-grid{grid-template-columns:1fr}
+  .jxx-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#fff;border-bottom:1px solid var(--jxx-line);
+    flex-direction:column;padding:12px 4vw 18px;gap:2px;
+    box-shadow:0 18px 30px rgba(22,35,58,.1);
+  }
+  .jxx-nav.is-open{display:flex}
+  .jxx-nav a{padding:12px 14px;font-size:15px}
+  .jxx-search{display:none}
+  .jxx-search.is-open{
+    display:flex;position:absolute;left:4vw;right:4vw;top:calc(100% + 4px);
+    width:auto;background:#fff;box-shadow:var(--jxx-shadow);z-index:5;
+  }
+  .jxx-menu-btn{display:flex}
+  .jxx-header-inner{position:relative;flex-wrap:wrap}
+}
+@media (max-width:760px){
+  :root{--jxx-header-h:104px}
+  .jxx-section{padding:40px 0}
+  .jxx-author-grid{grid-template-columns:1fr}
+  .jxx-topic-grid,.jxx-news-grid{grid-template-columns:1fr}
+  .jxx-parse-figure{grid-template-columns:1fr}
+  .jxx-video-wrap{padding:4px 14px}
+  .jxx-video-row{grid-template-columns:28px minmax(0,1fr);gap:10px}
+  .jxx-video-side{grid-column:2;align-items:flex-start}
+  .jxx-video-row--thumb .jxx-inline{flex-direction:column;gap:10px}
+  .jxx-video-thumb{width:100%;aspect-ratio:16/9}
+  .jxx-hero h1{font-size:30px}
+  .jxx-stats{grid-template-columns:1fr;gap:10px}
+  .jxx-stat{display:flex;align-items:baseline;gap:10px}
+  .jxx-stat b{font-size:20px}
+  .jxx-footer-grid{grid-template-columns:1fr}
+  .jxx-announce-track{gap:22px}
+  .jxx-cta{padding:30px 20px}
+  .jxx-partner-list{grid-template-columns:1fr}
+  .jxx-top-btn{right:14px;bottom:16px;width:42px;height:42px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="jxx-skip" href="#jxx-main">跳转到主要内容</a>
+
+<div class="jxx-topbar">
+  <div class="jxx-announce">
+    <div class="jxx-container jxx-announce-inner">
+      <span class="jxx-announce-tag">最新更新</span>
+      <div class="jxx-announce-track">
+        <span><b>11月21日</b>　「城市夜行」第四季第7集上线，首播24小时播放破 86 万</span>
+        <span><b>11月20日</b>　创作者激励计划 2026 冬季批次报名开启，截止 12 月 5 日</span>
+        <span><b>11月18日</b>　新版剪辑工作台开放内测，支持多轨字幕与一键分发</span>
+        <span><b>11月16日</b>　官方发布《原创内容版权保护白皮书（2026）》</span>
+      </div>
+    </div>
+  </div>
+  <header class="jxx-header">
+    <div class="jxx-container jxx-header-inner">
+      <a class="jxx-brand" href="#jxx-top" aria-label="jxx cc最新入口 官方首页">
+        <span class="jxx-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M7 4l13 8-13 8z" fill="#fff"/></svg>
+        </span>
+        <span class="jxx-brand-text">
+          <strong>jxx cc最新入口</strong>
+          <small>官方视频门户 · OFFICIAL</small>
+        </span>
+      </a>
+      <nav class="jxx-nav" id="jxxNav" aria-label="主导航">
+        <a href="#jxx-focus">焦点推荐</a>
+        <a href="#jxx-videos">热门视频</a>
+        <a href="#jxx-topics">专题企划</a>
+        <a href="#jxx-parse">深度解析</a>
+        <a href="#jxx-authors">创作者</a>
+        <a href="#jxx-comments">社区口碑</a>
+        <a href="#jxx-news">企业动态</a>
+        <a href="#jxx-faq">帮助中心</a>
+      </nav>
+      <div class="jxx-search" id="jxxSearchBox">
+        <label class="jxx-sr" for="jxxSearchInput">搜索站内视频</label>
+        <input id="jxxSearchInput" type="search" placeholder="搜索视频、专题或创作者" autocomplete="off">
+        <button type="button" id="jxxSearchBtn">搜索</button>
+      </div>
+      <button class="jxx-menu-btn" id="jxxMenuBtn" type="button" aria-expanded="false" aria-controls="jxxNav" aria-label="展开导航菜单">
+        <span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="jxx-main">
+  <span id="jxx-top"></span>
+
+  <!-- ================= 首屏 6:4 ================= -->
+  <section class="jxx-hero" aria-labelledby="jxx-hero-title">
+    <div class="jxx-container jxx-hero-grid">
+      <div class="jxx-hero-copy">
+        <span class="jxx-eyebrow">官方网站 · 品牌内容生态</span>
+        <h1 id="jxx-hero-title"><em>jxx cc最新入口</em></h1>
+        <p class="jxx-hero-lead">一个以原创影像为核心的企业级视频平台，把真实的生活、专业的知识与持续生长的社区力量，装进每一帧画面。</p>
+        <p class="jxx-hero-intro">
+          作为深耕视频内容领域的企业品牌，jxx cc最新入口官方网站持续为创作者与企业搭建高品质内容生态。我们提供高清正版播放、专业创作工具与全链路分发支持，坚持原创优先、用户至上的运营理念，让每一次上传与观看都被认真对待，让品牌故事与普通人的日常同样拥有被发现的机会。
+        </p>
+        <div class="jxx-hero-actions">
+          <a class="jxx-btn jxx-btn-primary" href="#jxx-videos">观看热门视频</a>
+          <button class="jxx-btn jxx-btn-accent" type="button" data-jxx-open="submit">我要投稿</button>
+          <a class="jxx-btn jxx-btn-ghost" href="#jxx-authors">认识创作者</a>
+        </div>
+        <div class="jxx-stats" role="list">
+          <div class="jxx-stat" role="listitem"><b data-jxx-count="12800">12,800</b><span>原创作品累计上线</span></div>
+          <div class="jxx-stat" role="listitem"><b data-jxx-count="460">460</b><span>签约与入驻创作者</span></div>
+          <div class="jxx-stat" role="listitem"><b data-jxx-count="92">92%</b><span>用户口碑推荐率</span></div>
+        </div>
+      </div>
+      <div class="jxx-hero-visual">
+        <div class="jxx-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 740'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%230e1b34'/%3E%3Cstop offset='.55' stop-color='%231f4fd8'/%3E%3Cstop offset='1' stop-color='%234e86f0'/%3E%3C/linearGradient%3E%3ClinearGradient id='city' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2312307a'/%3E%3Cstop offset='1' stop-color='%230a1428'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='740' fill='url(%23sky)'/%3E%3Ccircle cx='470' cy='200' r='90' fill='%23ff5b3d' opacity='.85'/%3E%3Ccircle cx='470' cy='200' r='130' fill='%23ff5b3d' opacity='.16'/%3E%3Cg opacity='.55'%3E%3Crect x='0' y='420' width='90' height='320' fill='url(%23city)'/%3E%3Crect x='80' y='480' width='70' height='260' fill='url(%23city)'/%3E%3Crect x='140' y='380' width='110' height='360' fill='url(%23city)'/%3E%3Crect x='240' y='450' width='80' height='290' fill='url(%23city)'/%3E%3Crect x='310' y='360' width='120' height='380' fill='url(%23city)'/%3E%3Crect x='420' y='470' width='90' height='270' fill='url(%23city)'/%3E%3Crect x='500' y='410' width='140' height='330' fill='url(%23city)'/%3E%3C/g%3E%3Cg fill='%23ffd9a8' opacity='.9'%3E%3Crect x='100' y='500' width='10' height='14'/%3E%3Crect x='120' y='520' width='10' height='14'/%3E%3Crect x='160' y='410' width='10' height='14'/%3E%3Crect x='186' y='440' width='10' height='14'/%3E%3Crect x='212' y='400' width='10' height='14'/%3E%3Crect x='330' y='390' width='10' height='14'/%3E%3Crect x='356' y='420' width='10' height='14'/%3E%3Crect x='382' y='390' width='10' height='14'/%3E%3Crect x='530' y='440' width='10' height='14'/%3E%3Crect x='560' y='470' width='10' height='14'/%3E%3Crect x='590' y='430' width='10' height='14'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='320' cy='560' r='30' fill='%23ffffff' opacity='.92'/%3E%3Cpath d='M310 546l24 14-24 14z' fill='%231f4fd8'/%3E%3C/g%3E%3Ctext x='40' y='90' fill='%23ffffff' font-family='sans-serif' font-size='26' font-weight='700' opacity='.92'%3Ejxx cc最新入口%3C/text%3E%3Ctext x='40' y='120' fill='%238fb0ee' font-family='sans-serif' font-size='14' letter-spacing='4'%3EOFFICIAL VIDEO PORTAL%3C/text%3E%3C/svg%3E" alt="jxx cc最新入口官方网站首页主视觉：夜色中的城市天际线与品牌播放标识">
+        </div>
+        <div class="jxx-hero-badge">
+          <span class="dot" aria-hidden="true">▶</span>
+          <div>
+            <b>本周主推：《城市夜行》第四季</b>
+            <span>原创纪录影像 · 4K 高清 · 每周五更新</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 焦点内容 ================= -->
+  <section class="jxx-section" id="jxx-focus" aria-labelledby="jxx-focus-title">
+    <div class="jxx-container">
+      <div class="jxx-section-head jxx-head-row">
+        <div>
+          <span class="jxx-kicker">Focus · 焦点推荐</span>
+          <h2 id="jxx-focus-title">官网精选：本周值得完整看完的三支片</h2>
+          <p>由编辑部与社区共同推选，兼顾专业深度与观看体验，每一支都代表 jxx cc最新入口 对品质内容的坚持。</p>
+        </div>
+        <a class="jxx-text-link" href="#jxx-videos">查看全部视频 →</a>
+      </div>
+
+      <div class="jxx-focus-grid">
+        <article class="jxx-focus-main">
+          <div class="jxx-focus-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 405'%3E%3Cdefs%3E%3ClinearGradient id='n1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231c3f8f'/%3E%3Cstop offset='1' stop-color='%230a1428'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='405' fill='url(%23n1)'/%3E%3Cg stroke='%23ff5b3d' stroke-width='3' fill='none' opacity='.8'%3E%3Cpath d='M0 300 Q180 220 360 290 T720 250'/%3E%3Cpath d='M0 330 Q180 250 360 320 T720 280' stroke='%232f6bf0' opacity='.7'/%3E%3C/g%3E%3Cg fill='%23ffd9a8'%3E%3Ccircle cx='120' cy='130' r='4'/%3E%3Ccircle cx='220' cy='90' r='3'/%3E%3Ccircle cx='330' cy='140' r='5'/%3E%3Ccircle cx='470' cy='100' r='3'/%3E%3Ccircle cx='580' cy='150' r='4'/%3E%3C/g%3E%3Cg fill='%230e1b34' opacity='.9'%3E%3Crect x='60' y='200' width='80' height='140'/%3E%3Crect x='160' y='240' width='60' height='100'/%3E%3Crect x='240' y='180' width='100' height='160'/%3E%3Crect x='360' y='230' width='70' height='110'/%3E%3Crect x='450' y='190' width='110' height='150'/%3E%3Crect x='580' y='250' width='90' height='90'/%3E%3C/g%3E%3Ctext x='36' y='60' fill='%23ffffff' font-family='sans-serif' font-size='22' font-weight='700'%3E城市夜行 · 第四季%3C/text%3E%3C/svg%3E" alt="《城市夜行》第四季纪录片封面：夜色城市与河流光轨">
+            <span class="jxx-play" aria-hidden="true"></span>
+          </div>
+          <div class="jxx-focus-body">
+            <div class="jxx-tagrow">
+              <span class="jxx-tag jxx-tag--accent">官方主推</span>
+              <span class="jxx-tag">城市探索</span>
+              <span class="jxx-tag">在地文化</span>
+            </div>
+            <h3>城市夜行 第四季 第7集：凌晨三点的水产市场，与守夜的人</h3>
+            <p>摄制组连续跟拍十一天，记录一座城市在睡眠最深时的运转方式。从卸货码头的第一声吆喝到早餐铺的第一笼蒸汽，镜头不打扰，只陪伴。这是一支关于真实与温暖的纪录短片，也是 jxx cc最新入口 原创企划的代表作。</p>
+            <div class="jxx-meta">
+              <span>作者 <strong>夜行摄制组</strong></span>
+              <span>播放 <strong>86.2万</strong></span>
+              <span>时长 18:40</span>
+              <span>更新 11月21日</span>
+            </div>
+            <div class="jxx-ops">
+              <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>3,214</span></button>
+              <button class="jxx-op" type="button" data-jxx-fav aria-pressed="false">☆ 收藏</button>
+              <button class="jxx-op" type="button" data-jxx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="jxx-focus-list">
+          <article class="jxx-focus-item">
+            <div class="jxx-tagrow"><span class="jxx-tag">教程干货</span><span class="jxx-tag">实用技巧</span></div>
+            <h3>三脚架之外：手持运镜的七个稳定细节</h3>
+            <p>从呼吸节奏到重心转移，用一支手持镜头拍出电影感，附分镜表格下载。</p>
+            <div class="jxx-meta"><span>作者 <strong>林照野</strong></span><span>播放 24.7万</span><span>时长 12:05</span></div>
+            <div class="jxx-ops">
+              <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>1,876</span></button>
+              <button class="jxx-op" type="button" data-jxx-share>分享</button>
+            </div>
+          </article>
+          <article class="jxx-focus-item">
+            <div class="jxx-tagrow"><span class="jxx-tag">人物访谈</span><span class="jxx-tag">创作幕后</span></div>
+            <h3>对话剪辑师阿岑：把三小时素材剪成三分钟的心跳</h3>
+            <p>一位从业十年的剪辑师谈节奏、舍弃与耐心，以及为什么好故事经得起留白。</p>
+            <div class="jxx-meta"><span>作者 <strong>节目组</strong></span><span>播放 19.3万</span><span>时长 26:12</span></div>
+            <div class="jxx-ops">
+              <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>1,402</span></button>
+              <button class="jxx-op" type="button" data-jxx-share>分享</button>
+            </div>
+          </article>
+          <article class="jxx-focus-item">
+            <div class="jxx-tagrow"><span class="jxx-tag">深度测评</span><span class="jxx-tag">科技前沿</span></div>
+            <h3>把入门机换成专业机之前，先看这期横评</h3>
+            <p>六台设备、同一场景、同一套灯位，用可复现的方法给出结论，拒绝参数堆砌。</p>
+            <div class="jxx-meta"><span>作者 <strong>老周评测</strong></span><span>播放 31.5万</span><span>时长 21:48</span></div>
+            <div class="jxx-ops">
+              <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>2,530</span></button>
+              <button class="jxx-op" type="button" data-jxx-share>分享</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 热门视频 ================= -->
+  <section class="jxx-section" id="jxx-videos" aria-labelledby="jxx-videos-title">
+    <div class="jxx-container">
+      <div class="jxx-section-head jxx-head-row">
+        <div>
+          <span class="jxx-kicker">Trending · 热门视频</span>
+          <h2 id="jxx-videos-title">社区正在看的 jxx cc最新入口 视频榜单</h2>
+          <p>榜单按近七日播放、完播与互动综合计算，每 24 小时更新一次。搜索框输入关键词可直接筛选下方条目。</p>
+        </div>
+        <a class="jxx-text-link" href="#jxx-topics">进入专题企划 →</a>
+      </div>
+
+      <div class="jxx-search-note" id="jxxSearchNote" role="status" aria-live="polite"></div>
+
+      <div class="jxx-video-wrap" id="jxxVideoList">
+        <article class="jxx-video-row jxx-video-row--thumb" data-jxx-keywords="城市夜行 纪录 在地文化 夜行摄制组">
+          <span class="jxx-rank">01</span>
+          <div class="jxx-inline">
+            <div class="jxx-video-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%2312307a'/%3E%3Cg fill='%23ffd9a8'%3E%3Ccircle cx='60' cy='40' r='3'/%3E%3Ccircle cx='150' cy='28' r='2'/%3E%3Ccircle cx='240' cy='52' r='3'/%3E%3C/g%3E%3Cpath d='M0 140 L60 100 L120 132 L190 92 L260 130 L320 104 L320 180 L0 180 Z' fill='%230a1428'/%3E%3Ccircle cx='250' cy='46' r='22' fill='%23ff5b3d' opacity='.85'/%3E%3C/svg%3E" alt="《凌晨三点的水产市场》视频封面：深夜码头与月亮">
+            </div>
+            <div class="jxx-video-inner">
+              <h3><a href="#jxx-videos">凌晨三点的水产市场：一支不打扰的纪录片</a></h3>
+              <p>我们用十一天记录了城市入睡后的另一套秩序，摊主、司机、清洁工，每个人都在替这座城值夜。</p>
+              <div class="jxx-tagrow"><span class="jxx-tag">城市探索</span><span class="jxx-tag">纪录</span></div>
+              <div class="jxx-video-ops">
+                <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>3,214</span></button>
+                <button class="jxx-op" type="button" data-jxx-fav aria-pressed="false">☆ 收藏</button>
+                <button class="jxx-op" type="button" data-jxx-share>分享</button>
+              </div>
+            </div>
+          </div>
+          <div class="jxx-video-side">
+            <div class="jxx-meta"><span><strong>夜行摄制组</strong></span><span>播放 86.2万</span></div>
+          </div>
+        </article>
+
+        <article class="jxx-video-row" data-jxx-keywords="运镜 教程 手持 林照野 实用技巧">
+          <span class="jxx-rank">02</span>
+          <div class="jxx-video-main">
+            <h3><a href="#jxx-videos">手持运镜的七个稳定细节，第4个最容易被忽略</a></h3>
+            <p>从呼吸、脚步到镜头焦段的选择，配套分镜表与练习清单，新手也能拍出流畅长镜头。</p>
+            <div class="jxx-tagrow"><span class="jxx-tag">教程干货</span><span class="jxx-tag">实用技巧</span></div>
+          </div>
+          <div class="jxx-video-side">
+            <div class="jxx-meta"><span><strong>林照野</strong></span><span>播放 24.7万</span></div>
+            <div class="jxx-video-ops">
+              <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>1,876</span></button>
+              <button class="jxx-op" type="button" data-jxx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jxx-video-row" data-jxx-keywords="剪辑 访谈 阿岑 创作幕后 人物访谈">
+          <span class="jxx-rank">03</span>
+          <div class="jxx-video-main">
+            <h3><a href="#jxx-videos">对话剪辑师阿岑：三小时素材里的三分钟心跳</a></h3>
+            <p>他删掉过自己最满意的一场戏，只因那段镜头抢走了观众的情绪。这期访谈聊取舍，也聊耐心。</p>
+            <div class="jxx-tagrow"><span class="jxx-tag">人物访谈</span><span class="jxx-tag">创作幕后</span></div>
+          </div>
+          <div class="jxx-video-side">
+            <div class="jxx-meta"><span><strong>节目组</strong></span><span>播放 19.3万</span></div>
+            <div class="jxx-video-ops">
+              <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>1,402</span></button>
+              <button class="jxx-op" type="button" data-jxx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jxx-video-row" data-jxx-keywords="测评 设备 横评 老周评测 深度测评 科技前沿">
+          <span class="jxx-rank">04</span>
+          <div class="jxx-video-main">
+            <h3><a href="#jxx-videos">六台设备同场景横评：升级前先看完这21分钟</a></h3>
+            <p>同一灯位、同一构图、同一段脚本，把差异放进可复现的测试里，结论写在最后三分钟。</p>
+            <div class="jxx-tagrow"><span class="jxx-tag">深度测评</span><span class="jxx-tag">科技前沿</span></div>
+          </div>
+          <div class="jxx-video-side">
+            <div class="jxx-meta"><span><strong>老周评测</strong></span><span>播放 31.5万</span></div>
+            <div class="jxx-video-ops">
+              <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>2,530</span></button>
+              <button class="jxx-op" type="button" data-jxx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jxx-video-row" data-jxx-keywords="手作 木工 治愈影像 苏晚 生活方式">
+          <span class="jxx-rank">05</span>
+          <div class="jxx-video-main">
+            <h3><a href="#jxx-videos">用一块旧船木，做一张能用二十年的小凳</a></h3>
+            <p>刨花的味道、木纹的方向、四十二次试坐。手工的过程没有捷径，镜头也没有配乐，只有声音。</p>
+            <div class="jxx-tagrow"><span class="jxx-tag">手作DIY</span><span class="jxx-tag">治愈影像</span></div>
+          </div>
+          <div class="jxx-video-side">
+            <div class="jxx-meta"><span><strong>苏晚手作</strong></span><span>播放 27.9万</span></div>
+            <div class="jxx-video-ops">
+              <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>2,105</span></button>
+              <button class="jxx-op" type="button" data-jxx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jxx-video-row" data-jxx-keywords="职场 日常 记录 阿禾 经验分享">
+          <span class="jxx-rank">06</span>
+          <div class="jxx-video-main">
+            <h3><a href="#jxx-videos">连续记录上班第300天：一个普通剪辑员的日常</a></h3>
+            <p>没有反转也没有金句，只有地铁、盒饭和凌晨的导出进度条，以及越来越稳的手。</p>
+            <div class="jxx-tagrow"><span class="jxx-tag">职场日常</span><span class="jxx-tag">日常记录</span></div>
+          </div>
+          <div class="jxx-video-side">
+            <div class="jxx-meta"><span><strong>阿禾的记录</strong></span><span>播放 15.6万</span></div>
+            <div class="jxx-video-ops">
+              <button class="jxx-op" type="button" data-jxx-like aria-pressed="false">♡ 点赞 <span data-jxx-like-num>968</span></button>
+              <button class="jxx-op" type="button" data-jxx-share>分享</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 专题企划 ================= -->
+  <section class="jxx-section" id="jxx-topics" aria-labelledby="jxx-topics-title">
+    <div class="jxx-container">
+      <div class="jxx-section-head">
+        <span class="jxx-kicker">Series · 专题企划</span>
+        <h2 id="jxx-topics-title">官方发布的三组长期企划，让内容有延续性</h2>
+        <p>专题不是一次性合集，而是持续运营的内容生态。每个企划都有明确主题、更新节奏与参与方式，欢迎创作者报名共同完成。</p>
+      </div>
+      <div class="jxx-topic-grid">
+        <article class="jxx-topic">
+          <span class="jxx-topic-status">更新中 · 每周五</span>
+          <h3>城市夜行</h3>
+          <p>把镜头交给凌晨的城市，用克制的观察记录那些白天看不见的劳动者与空间。</p>
+          <ol>
+            <li data-idx="1">第7集 · 水产市场的守夜人</li>
+            <li data-idx="2">第6集 · 末班公交上的六个人</li>
+            <li data-idx="3">第5集 · 二十四小时便利店的值班表</li>
+          </ol>
+        </article>
+        <article class="jxx-topic">
+          <span class="jxx-topic-status is-soon">报名中 · 12月5日截止</span>
+          <h3>一支片的诞生</h3>
+          <p>从选题到成片全流程公开，把创作幕后摊开给同行看，也让观众理解影像的成本。</p>
+          <ol>
+            <li data-idx="1">选题会：如何判断一个故事值不值得拍</li>
+            <li data-idx="2">拍摄日：被天气推翻的三套方案</li>
+            <li data-idx="3">后期台：调色与声音的最后一公里</li>
+          </ol>
+        </article>
+        <article class="jxx-topic">
+          <span class="jxx-topic-status">长期企划 · 每月一期</span>
+          <h3>普通人的镜头</h3>
+          <p>面向所有社区成员的征集企划，用手机也能参与，我们提供剪辑指导与官方展映位。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 关键词深度解析 ================= -->
+  <section class="jxx-section" id="jxx-parse" aria-labelledby="jxx-parse-title">
+    <div class="jxx-container">
+      <div class="jxx-parse">
+        <span class="jxx-kicker">Insight · 深度解析</span>
+        <h2 id="jxx-parse-title">读懂 jxx cc最新入口：一个视频品牌如何持续生长</h2>
+        <p class="jxx-parse-lead">以下内容由品牌内容研究组撰写，围绕平台定位、内容生态与社区运营三个层面，解释关键词背后的真实含义。</p>
+
+        <h3>一、从入口到生态：jxx cc最新入口 的品牌定位</h3>
+        <p>很多第一次接触 jxx cc最新入口 的人，会先把它理解成一个“入口”——一个进入视频内容世界的门。这个理解并不算错，但只对了一半。作为一家持续运营的企业品牌，我们更愿意把 jxx cc最新入口 定义为一个完整的<span class="jxx-hl">内容生态系统</span>：入口只是开始，真正决定价值的是进入之后能看到什么、能留下什么、能带走什么。因此官方网站从第一天起就没有把自己做成一个单纯的播放列表页，而是把品牌故事、创作者档案、专题企划、社区评价与帮助中心放在同一条叙事线上，让访问者能在十分钟内理解这个平台在做什么、为谁而做、凭什么值得信赖。</p>
+        <p>在定位上，我们坚持三件事。第一是<span class="jxx-hl">原创优先</span>：平台首页的推荐位不按预算排序，而按内容完成度、叙事诚意与观众反馈综合评估，转载与搬运内容无法进入焦点位。第二是<span class="jxx-hl">专业标准</span>：所有官方发布内容都经过画质、声音与字幕三道质检，高清播放不是宣传语，而是可核查的交付标准。第三是<span class="jxx-hl">用户至上</span>：我们把播放器加载速度、评论区秩序、举报响应时长都写进公开的运营指标，每季度在官方网站更新一次，接受社区监督。这三条看起来朴素，却是长期主义最难的部分——因为它要求每一次更新都对得起上一次承诺。</p>
+
+        <div class="jxx-parse-figure">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23eef2fc'/%3E%3Cg stroke='%231f4fd8' stroke-width='2' fill='none'%3E%3Crect x='40' y='60' width='120' height='70' rx='8'/%3E%3Crect x='180' y='60' width='120' height='70' rx='8'/%3E%3Crect x='320' y='60' width='120' height='70' rx='8'/%3E%3Cpath d='M160 95h20M300 95h20M100 130v60h280v-60'/%3E%3Crect x='180' y='190' width='120' height='60' rx='8' stroke='%23ff5b3d'/%3E%3C/g%3E%3Cg fill='%2312307a' font-family='sans-serif' font-size='12'%3E%3Ctext x='64' y='100'%3E选题%3C/text%3E%3Ctext x='204' y='100'%3E制作%3C/text%3E%3Ctext x='344' y='100'%3E审核%3C/text%3E%3Ctext x='218' y='226'%3E分发与反馈%3C/text%3E%3C/g%3E%3C/svg%3E" alt="jxx cc最新入口内容生产流程图：选题、制作、审核与分发反馈四个环节">
+            <figcaption>官方内容生产流程：每个环节都有可追溯的记录</figcaption>
+          </figure>
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%230e1b34'/%3E%3Cg fill='%231f4fd8'%3E%3Crect x='50' y='200' width='46' height='60' rx='4'/%3E%3Crect x='116' y='168' width='46' height='92' rx='4'/%3E%3Crect x='182' y='132' width='46' height='128' rx='4'/%3E%3Crect x='248' y='150' width='46' height='110' rx='4'/%3E%3Crect x='314' y='104' width='46' height='156' rx='4'/%3E%3Crect x='380' y='76' width='46' height='184' rx='4'/%3E%3C/g%3E%3Cpath d='M50 190 L139 156 L205 120 L271 138 L337 92 L403 64' stroke='%23ff5b3d' stroke-width='3' fill='none'/%3E%3Cg fill='%238fb0ee' font-family='sans-serif' font-size='11'%3E%3Ctext x='50' y='40'%3E近六季度原创作品上线量%3C/text%3E%3Ctext x='50' y='285'%3EQ1%3C/text%3E%3Ctext x='240' y='285'%3EQ4%3C/text%3E%3Ctext x='392' y='285'%3EQ6%3C/text%3E%3C/g%3E%3C/svg%3E" alt="jxx cc最新入口近六季度原创作品上线量柱状趋势图">
+            <figcaption>近六个季度原创作品上线量保持稳定增长</figcaption>
+          </figure>
+        </div>
+
+        <h3>二、内容生态：原创、正版与高清如何同时成立</h3>
+        <p>内容生态这个词常被说得很虚，但在 jxx cc最新入口 内部，它对应着一套具体的机制。创作者上传作品后，系统先做版权指纹比对，确认无侵权风险才进入审核队列；通过审核的作品会被打上原创标识，并获得基础流量扶持。平台与创作者签署的分成协议中，播放收益、打赏收益与付费专题收益各自独立结算，明细在后台可逐条核对。这套机制让“正版”不是一句口号，而是创作者能算清楚的一笔账。我们相信，只有当认真做内容的人能靠内容活下去，生态才是健康的。</p>
+        <p>高清与品质是另一条线。很多观众以为高清只取决于设备，其实更取决于流程：拍摄时的曝光控制、后期的色彩管理、上传时的编码参数、播放时的自适应码率，任何一环偷懒都会让画质打折。jxx cc最新入口 官方发布的<span class="jxx-hl">《内容品质手册》</span>把这些环节拆成可执行清单，并提供模板工程供创作者下载。上线两年多来，社区作品的4K占比从最初的百分之十一提升到百分之四十七，观众的平均完播率也随之提升。这是一条慢变量，但它决定了平台在行业内的口碑。</p>
+        <p>值得一提的是，生态并不只服务于专业创作者。我们用“普通人的镜头”企划为手机创作者保留专门入口，提供轻量剪辑模板与字幕助手，让没有设备预算的人也能完成一支结构完整的作品。多元与包容不是姿态，而是流量分配上的真实倾斜：该企划每月固定拿出首页推荐位，给第一次投稿的新人。</p>
+
+        <h3>三、社区运营：口碑来自每一次具体的回应</h3>
+        <p>视频平台的社区氛围极其脆弱，一条恶意评论就可能让创作者放弃更新。jxx cc最新入口 的做法是把社区运营拆成三件小事并长期执行。第一是<span class="jxx-hl">反馈闭环</span>：用户在评论区或帮助中心提交的问题，四十八小时内必须有人回复，处理结果同步在“企业动态”里公开；第二是<span class="jxx-hl">创作者陪伴</span>：新入驻创作者会收到一份冷启动指南，并在首月获得一次一对一的选题沟通；第三是<span class="jxx-hl">线下连接</span>：每季度举办一次小型放映与交流，把线上认识的人聚到同一间屋子里，让社区从屏幕里走出来。</p>
+        <p>这些工作很难用数据直接证明价值，但它们共同构成了“值得信赖”这四个字。我们看到的变化是：愿意在评论区认真写长评的人变多了，举报量在内容总量增长的同时反而下降，创作者续约率连续四个季度保持在较高水平。这些指标不会出现在首屏，却是品牌真正的护城河。未来一年，jxx cc最新入口 计划把帮助中心的常见问题整理成可搜索的知识库，并在每支官方视频下方附上制作说明，让内容生态的透明度再往前走一步。</p>
+        <p>最后回到关键词本身。jxx cc最新入口 这七个字，对用户来说是一条进入好内容的路径；对创作者来说，是一个愿意长期分账、长期陪伴的合作方；对企业来说，是一份需要每年重新交付的承诺。入口会更新，界面会迭代，但让真实被看见、让专业被尊重、让社区有温度，这三件事不会变。这也是我们把这个网站做成官方网站的原因——官方网站意味着正式、可核查、可持续，而不是一个随时会消失的临时页面。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 创作者矩阵 ================= -->
+  <section class="jxx-section" id="jxx-authors" aria-labelledby="jxx-authors-title">
+    <div class="jxx-container">
+      <div class="jxx-section-head jxx-head-row">
+        <div>
+          <span class="jxx-kicker">Creators · 创作者</span>
+          <h2 id="jxx-authors-title">在 jxx cc最新入口 持续更新的四位创作者</h2>
+          <p>他们来自不同领域，共同点是稳定更新与对细节的耐心。点击“资料”可查看完整合作档案。</p>
+        </div>
+        <button class="jxx-text-link" type="button" data-jxx-open="submit" style="background:none">申请入驻 →</button>
+      </div>
+      <div class="jxx-author-grid">
+        <article class="jxx-author-card">
+          <div class="jxx-avatar" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><rect width="64" height="64" fill="#1f4fd8"/><circle cx="32" cy="25" r="11" fill="#ffd9a8"/><path d="M12 60c0-12 9-19 20-19s20 7 20 19z" fill="#ff5b3d"/></svg>
+          </div>
+          <div class="jxx-author-body">
+            <h3>夜行摄制组 <span class="jxx-author-badge">官方合作</span></h3>
+            <div class="jxx-author-field">擅长 · 城市纪录 / 长镜头叙事</div>
+            <p>三人小团队，习惯在夜里工作。相信不打扰的拍摄才是尊重，作品多为一镜到底的长段落，后期几乎不加音乐，只保留环境声。</p>
+            <div class="jxx-author-nums"><span>作品 <b>48</b></span><span>粉丝 <b>26.4万</b></span></div>
+            <button class="jxx-op" type="button" data-jxx-author="夜行摄制组：三人纪录团队，代表作《城市夜行》系列。合作方向包括城市宣传片、公益纪录与品牌实地探访，坚持实景收音与长镜头表达，近两年完成十一支官方企划。">查看资料</button>
+          </div>
+        </article>
+
+        <article class="jxx-author-card">
+          <div class="jxx-avatar" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><rect width="64' height='64' fill='#0e1b34'/><circle cx='32' cy='24' r='10' fill='#8fb0ee'/><path d='M14 58c0-11 8-17 18-17s18 6 18 17z' fill='#2f6bf0'/></svg>
+          </div>
+          <div class="jxx-author-body">
+            <h3>林照野</h3>
+            <div class="jxx-author-field">擅长 · 拍摄教程 / 运镜技巧</div>
+            <p>前商业广告摄影师，现专注把专业方法讲成人话。每期教程都附可打印的练习清单，视频节奏干净，几乎不废话，被社区称为“能直接照着练”的频道。</p>
+            <div class="jxx-author-nums"><span>作品 <b>96</b></span><span>粉丝 <b>18.7万</b></span></div>
+            <button class="jxx-op" type="button" data-jxx-author="林照野：十年商业摄影经验，擅长把复杂技法拆解为可执行步骤。教程均配练习清单，适合从入门到进阶的创作者系统学习。">查看资料</button>
+          </div>
+        </article>
+
+        <article class="jxx-author-card">
+          <div class="jxx-avatar" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><rect width='64' height='64' fill='#ff5b3d'/%3E%3Ccircle cx='32' cy='25' r='11' fill='%23fff3e8'/%3E%3Cpath d='M12 60c0-12 9-19 20-19s20 7 20 19z' fill='%2312307a'/%3E%3C/svg>
+          </div>
+          <div class="jxx-author-body">
+            <h3>苏晚手作</h3>
+            <div class="jxx-author-field">擅长 · 木工手作 / 治愈影像</div>
+            <p>在南方小城有一间自己的木工房，视频里很少出镜，镜头多留给刨花与木纹。她坚持每件作品至少使用一年才拍摄，说时间才是最好的评测。</p>
+            <div class="jxx-author-nums"><span>作品 <b>37</b></span><span>粉丝 <b>12.9万</b></span></div>
+            <button class="jxx-op" type="button" data-jxx-author="苏晚手作：独立木工创作者，作品以长期使用记录为核心，强调耐用与修复。视频风格安静克制，适合生活方式与家居类品牌合作。">查看资料</button>
+          </div>
+        </article>
+
+        <article class="jxx-author-card">
+          <div class="jxx-avatar" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><rect width='64' height='64' fill='%23f2a83b'/%3E%3Ccircle cx='32' cy='24' r='10' fill='%2312307a'/%3E%3Cpath d='M14 58c0-11 8-17 18-17s18 6 18 17z' fill='%230e1b34'/%3E%3C/svg>
+          </div>
+          <div class="jxx-author-body">
+            <h3>老周评测</h3>
+            <div class="jxx-author-field">擅长 · 设备横评 / 行业观察</div>
+            <p>做评测十五年，最讨厌“参数党”。他的方法论是同一场景、同一脚本、同一测量方式，结论写在最后，过程全部保留，观众可以自己判断。</p>
+            <div class="jxx-author-nums"><span>作品 <b>211</b></span><span>粉丝 <b>34.2万</b></span></div>
+            <button class="jxx-op" type="button" data-jxx-author="老周评测：资深影像设备评测人，主张可复现的测试方法，拒绝商业软文。合作需提供完整测试样机与不低于四周的使用周期。">查看资料</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 社区口碑 ================= -->
+  <section class="jxx-section" id="jxx-comments" aria-labelledby="jxx-comments-title">
+    <div class="jxx-container">
+      <div class="jxx-section-head">
+        <span class="jxx-kicker">Voices · 社区口碑</span>
+        <h2 id="jxx-comments-title">来自 jxx cc最新入口 社区的真实声音</h2>
+        <p>评价来自站内用户与入驻创作者，未经润色，仅做匿名与长度处理。</p>
+      </div>
+      <div class="jxx-comment-grid">
+        <blockquote class="jxx-quote">
+          <p>“我在这里发布了第一支短片，本来只想留个记录。没想到第二天收到编辑的长评，逐条写了哪一分钟可以剪短、哪一段声音可以留白。三个月后我拿到了第一笔分成，虽然不多，但那种被认真对待的感觉，让我决定继续拍下去。”</p>
+          <footer>—— 阿禾的记录 · 入驻创作者 第 14 个月</footer>
+          <div class="jxx-quote-stats"><span>★ 4.9 创作者满意度</span><span>· 92% 推荐率</span></div>
+        </blockquote>
+        <div class="jxx-comment-list">
+          <div class="jxx-comment">
+            <div class="jxx-comment-head"><span class="jxx-comment-ava" style="background:#1f4fd8">周</span><b>周末不加班</b><span>11月21日</span><span class="jxx-stars">★★★★★</span></div>
+            <p>画质和声音是真的讲究，戴耳机看《城市夜行》能听见远处的船笛。这种细节现在很少见了。</p>
+          </div>
+          <div class="jxx-comment">
+            <div class="jxx-comment-head"><span class="jxx-comment-ava" style="background:#ff5b3d">林</span><b>林间小径</b><span>11月20日</span><span class="jxx-stars">★★★★☆</span></div>
+            <p>教程类内容很实用，就是希望以后能多一些配套的下载素材，练习起来会更方便一点。</p>
+          </div>
+          <div class="jxx-comment">
+            <div class="jxx-comment-head"><span class="jxx-comment-ava" style="background:#0e1b34">陈</span><b>陈默的硬盘</b><span>11月19日</span><span class="jxx-stars">★★★★★</span></div>
+            <p>之前反馈过播放器在旧设备上卡顿，四天后收到回复说已优化，更新日志里也写了。这种反馈有回音的平台不多，值得信赖。</p>
+          </div>
+          <div class="jxx-comment">
+            <div class="jxx-comment-head"><span class="jxx-comment-ava" style="background:#f2a83b">橙</span><b>橘子汽水加冰</b><span>11月18日</span><span class="jxx-stars">★★★★★</span></div>
+            <p>评论区氛围挺好的，大家会认真讨论镜头，而不是吵架。作为一个只想安静看视频的人，这点特别重要。</p>
+          </div>
+          <div class="jxx-comment">
+            <div class="jxx-comment-head"><span class="jxx-comment-ava" style="background:#2f6bf0">木</span><b>木木木工房</b><span>11月17日</span><span class="jxx-stars">★★★★☆</span></div>
+            <p>手作区的专题做得不错，就是更新有点慢，等苏晚的新片等了半个月，希望官方多催一催。</p>
+          </div>
+          <div class="jxx-comment">
+            <div class="jxx-comment-head"><span class="jxx-comment-ava" style="background:#12307a">顾</span><b>顾南舟</b><span>11月16日</span><span class="jxx-stars">★★★★★</span></div>
+            <p>投稿流程比想象中简单，版权说明写得很清楚，分成明细也能核对。对新人创作者来说，门槛不高但规矩很正。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 企业动态 ================= -->
+  <section class="jxx-section" id="jxx-news" aria-labelledby="jxx-news-title">
+    <div class="jxx-container">
+      <div class="jxx-section-head jxx-head-row">
+        <div>
+          <span class="jxx-kicker">Newsroom · 企业动态</span>
+          <h2 id="jxx-news-title">jxx cc最新入口 官方发布的近期动态</h2>
+          <p>产品、规则与活动信息的第一发布渠道，所有变更以此处公告为准。</p>
+        </div>
+      </div>
+      <div class="jxx-news-grid">
+        <article class="jxx-news">
+          <time datetime="2026-11-20">2026 / 11 / 20</time>
+          <h3>冬季创作者激励计划开放报名</h3>
+          <p>面向所有入驻创作者，提供流量扶持、选题指导与设备借用额度，报名截止 12 月 5 日。</p>
+        </article>
+        <article class="jxx-news">
+          <time datetime="2026-11-18">2026 / 11 / 18</time>
+          <h3>新版剪辑工作台进入内测</h3>
+          <p>支持多轨字幕、智能对齐与一键分发到站内频道，内测名额 300 个，可在帮助中心申请。</p>
+        </article>
+        <article class="jxx-news">
+          <time datetime="2026-11-16">2026 / 11 / 16</time>
+          <h3>《原创内容版权保护白皮书》发布</h3>
+          <p>公布版权指纹比对流程与侵权处理时效，并承诺所有官方发布内容可追溯来源。</p>
+        </article>
+        <article class="jxx-news">
+          <time datetime="2026-11-12">2026 / 11 / 12</time>
+          <h3>季度线下放映会顺利举办</h3>
+          <p>三十位创作者与观众共同观看了三部社区作品，现场完成两场选题交流与一次设备试用。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 合作墙 + FAQ ================= -->
+  <section class="jxx-section" aria-labelledby="jxx-faq-title">
+    <div class="jxx-container">
+      <div class="jxx-pair">
+        <div class="jxx-partners">
+          <span class="jxx-kicker">Partners · 合作品牌</span>
+          <h3>与 jxx cc最新入口 共同成长的伙伴</h3>
+          <div class="jxx-partner-list">
+            <div class="jxx-partner"><b>远山影像</b>器材支持</div>
+            <div class="jxx-partner"><b>拾光书房</b>内容联名</div>
+            <div class="jxx-partner"><b>南岸咖啡</b>线下放映</div>
+            <div class="jxx-partner"><b>青原木作</b>专题合作</div>
+            <div class="jxx-partner"><b>回声唱片</b>声音授权</div>
+            <div class="jxx-partner"><b>城市文旅</b>在地企划</div>
+          </div>
+        </div>
+        <div class="jxx-faq">
+          <span class="jxx-kicker">FAQ · 帮助中心</span>
+          <h3 id="jxx-faq-title">关于官方网站与内容服务的常见问题</h3>
+          <details open>
+            <summary>如何成为 jxx cc最新入口 的入驻创作者？</summary>
+            <p>在页面顶部点击“我要投稿”，填写联系方式与作品链接即可提交申请。我们会在五个工作日内回复，通过后会收到一份冷启动指南与首月选题沟通邀请。</p>
+          </details>
+          <details>
+            <summary>平台对作品的画质和时长有要求吗？</summary>
+            <p>建议上传 1080P 及以上分辨率，音频采样不低于 48kHz。时长没有硬性限制，但十分钟以内的作品在社区传播效率更高，长片可申请专题位推荐。</p>
+          </details>
+          <details>
+            <summary>原创作品的收益如何结算？</summary>
+            <p>播放收益、打赏收益与付费专题收益分别独立结算，后台可逐条核对。满 100 元即可申请提现，结算周期为自然月结束后的十个工作日内。</p>
+          </details>
+          <details>
+            <summary>发现搬运或侵权内容怎么办？</summary>
+            <p>可在视频页面点击举报，或通过帮助中心提交版权材料。官方承诺四十八小时内响应，处理结果会同步在“企业动态”中公开。</p>
+          </details>
+          <details>
+            <summary>普通用户可以用手机投稿吗？</summary>
+            <p>可以。“普通人的镜头”企划专门为手机创作者设立，提供轻量剪辑模板与字幕助手，每月固定预留首页推荐位给首次投稿的新人。</p>
+          </details>
+          <details>
+            <summary>如何参加线下放映与交流活动？</summary>
+            <p>每季度一次，活动信息会提前两周在企业动态与社区公告中发布，入驻创作者优先报名，普通用户可通过留言或投稿入口登记。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 投稿 CTA ================= -->
+  <section class="jxx-section" aria-labelledby="jxx-cta-title">
+    <div class="jxx-container">
+      <div class="jxx-cta">
+        <div>
+          <h2 id="jxx-cta-title">把你的作品，放进 jxx cc最新入口 的下一期专题</h2>
+          <p>无论是一支完整短片，还是一段三分钟的生活记录，只要它真实、认真、有自己的视角，我们都愿意给它一个被看见的位置。官方提供剪辑指导、版权登记与分发支持。</p>
+        </div>
+        <div class="jxx-cta-actions">
+          <button class="jxx-btn jxx-btn-accent" type="button" data-jxx-open="submit">立即投稿</button>
+          <button class="jxx-btn jxx-btn-ghost" type="button" data-jxx-share>分享本页</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="jxx-footer">
+  <div class="jxx-container">
+    <div class="jxx-footer-grid">
+      <div>
+        <div class="jxx-footer-brand">
+          <span class="jxx-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 4l13 8-13 8z" fill="#fff"/></svg>
+          </span>
+          <strong>jxx cc最新入口</strong>
+        </div>
+        <p>jxx cc最新入口 官方网站 · 原创高清视频内容平台。我们持续运营内容生态，为创作者与企业提供值得信赖的分发与展示服务，让真实与专业被更多人看见。</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <ul>
+          <li><a href="#jxx-focus">焦点推荐</a></li>
+          <li><a href="#jxx-videos">热门视频</a></li>
+          <li><a href="#jxx-topics">专题企划</a></li>
+          <li><a href="#jxx-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#jxx-parse">品牌深度解析</a></li>
+          <li><a href="#jxx-comments">社区口碑</a></li>
+          <li><a href="#jxx-news">企业动态</a></li>
+          <li><a href="#jxx-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系与声明</h4>
+        <ul>
+          <li>合作邮箱：brand@jxxcc.example</li>
+          <li>投稿咨询：creator@jxxcc.example</li>
+          <li>内容版权归原创作者所有</li>
+          <li>官方发布 · 转载请注明来源</li>
+        </ul>
+      </div>
+    </div>
+    <div class="jxx-footer-bottom">
+      <span>© 2026 jxx cc最新入口 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容合规编号 JXX-2026-1108　·　品质内容 · 用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<button class="jxx-top-btn" id="jxxTopBtn" type="button" aria-label="回到页面顶部">↑</button>
+<div class="jxx-toast" id="jxxToast" role="status" aria-live="polite"></div>
+
+<div class="jxx-modal" id="jxxModal" role="dialog" aria-modal="true" aria-labelledby="jxxModalTitle">
+  <div class="jxx-modal-box">
+    <button class="jxx-modal-close" type="button" id="jxxModalClose" aria-label="关闭弹窗">×</button>
+    <h3 id="jxxModalTitle">投稿与合作</h3>
+    <p id="jxxModalDesc">留下你的联系方式与作品简介，官方运营团队会在五个工作日内回复。</p>
+    <form id="jxxSubmitForm">
+      <label for="jxxName">称呼</label>
+      <input id="jxxName" name="name" type="text" placeholder="如何称呼你" required>
+      <label for="jxxContact">联系方式</label>
+      <input id="jxxContact" name="contact" type="text" placeholder="邮箱或常用社交账号" required>
+      <label for="jxxMsg">作品简介</label>
+      <textarea id="jxxMsg" name="msg" rows="3" placeholder="简述作品主题、时长与创作背景"></textarea>
+      <button class="jxx-btn jxx-btn-primary" type="submit" style="width:100%;justify-content:center">提交申请</button>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var $ = function(s,c){return (c||document).querySelector(s);};
+  var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));};
+
+  /* Toast */
+  var toastEl = $("#jxxToast"), toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){toastEl.classList.remove("is-show");}, 2400);
+  }
+
+  /* 移动端导航折叠 */
+  var menuBtn = $("#jxxMenuBtn"), nav = $("#jxxNav"), searchBox = $("#jxxSearchBox");
+  if(menuBtn){
+    menuBtn.addEventListener("click", function(){
+      var open = menuBtn.getAttribute("aria-expanded") === "true";
+      menuBtn.setAttribute("aria-expanded", String(!open));
+      nav.classList.toggle("is-open", !open);
+      if(!open){ searchBox.classList.add("is-open"); }
+      else { searchBox.classList.remove("is-open"); }
+    });
+    $$("a", nav).forEach(function(a){
+      a.addEventListener("click", function(){
+        menuBtn.setAttribute("aria-expanded","false");
+        nav.classList.remove("is-open");
+        searchBox.classList.remove("is-open");
+      });
+    });
+  }
+
+  /* 点赞 +1 / -1 */
+  $$("[data-jxx-like]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var on = btn.getAttribute("aria-pressed") === "true";
+      var numEl = $("[data-jxx-like-num]", btn);
+      var n = numEl ? parseInt(numEl.textContent.replace(/,/g,""),10) || 0 : 0;
+      if(on){
+        btn.setAttribute("aria-pressed","false");
+        btn.classList.remove("is-on");
+        btn.firstChild.nodeValue = "♡ 点赞 ";
+        if(numEl) numEl.textContent = (n-1).toLocaleString("en-US");
+        toast("已取消点赞");
+      }else{
+        btn.setAttribute("aria-pressed","true");
+        btn.classList.add("is-on");
+        btn.firstChild.nodeValue = "♥ 已赞 ";
+        if(numEl) numEl.textContent = (n+1).toLocaleString("en-US");
+        toast("点赞成功，感谢支持原创内容");
+      }
+    });
+  });
+
+  /* 收藏切换 */
+  $$("[data-jxx-fav]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var on = btn.getAttribute("aria-pressed") === "true";
+      btn.setAttribute("aria-pressed", String(!on));
+      btn.classList.toggle("is-fav", !on);
+      btn.textContent = on ? "☆ 收藏" : "★ 已收藏";
+      toast(on ? "已移出收藏夹" : "已加入收藏，可在个人页查看");
+    });
+  });
+
+  /* 分享：Clipboard + Toast */
+  function fallbackCopy(text){
+    var ta = document.createElement("textarea");
+    ta.value = text; ta.setAttribute("readonly","");
+    ta.style.position = "fixed"; ta.style.top = "-1000px";
+    document.body.appendChild(ta); ta.select();
+    var ok = false;
+    try{ ok = document.execCommand("copy"); }catch(e){ ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+  $$("[data-jxx-share]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var link = window.location.href.split("#")[0];
+      var done = function(ok){
+        toast(ok ? "链接已复制，可粘贴分享到微信、微博或 QQ" : "分享链接：" + link);
+      };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){done(true);}).catch(function(){done(fallbackCopy(link));});
+      }else{
+        done(fallbackCopy(link));
+      }
+    });
+  });
+
+  /* 作者资料弹窗 */
+  var modal = $("#jxxModal"), modalTitle = $("#jxxModalTitle"),
+      modalDesc = $("#jxxModalDesc"), submitForm = $("#jxxSubmitForm");
+  function openModal(title, desc){
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    modal.classList.add("is-open");
+    $("#jxxModalClose").focus();
+  }
+  function closeModal(){ modal.classList.remove("is-open"); }
+  $$("[data-jxx-author]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      openModal("创作者档案", btn.getAttribute("data-jxx-author"));
+    });
+  });
+
+  /* 投稿入口弹窗 */
+  $$('[data-jxx-open="submit"]').forEach(function(btn){
+    btn.addEventListener("click", function(){
+      openModal("投稿与合作", "留下你的联系方式与作品简介，官方运营团队会在五个工作日内回复。");
+    });
+  });
+  $("#jxxModalClose").addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+  submitForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = $("#jxxName").value.trim();
+    if(!name){ toast("请填写称呼"); return; }
+    closeModal();
+    submitForm.reset();
+    toast("申请已提交，运营团队将尽快与你联系");
+  });
+
+  /* 搜索筛选反馈 */
+  var input = $("#jxxSearchInput"), note = $("#jxxSearchNote"),
+      rows = $$("#jxxVideoList .jxx-video-row");
+  function doSearch(){
+    var kw = (input.value || "").trim().toLowerCase();
+    if(!kw){
+      rows.forEach(function(r){ r.classList.remove("is-hide"); });
+      note.classList.remove("is-show");
+      return;
+    }
+    var hit = 0;
+    rows.forEach(function(r){
+      var text = (r.textContent + " " + (r.getAttribute("data-jxx-keywords")||"")).toLowerCase();
+      var ok = text.indexOf(kw) !== -1;
+      r.classList.toggle("is-hide", !ok);
+      if(ok) hit++;
+    });
+    note.textContent = "搜索“" + input.value.trim() + "”，匹配到 " + hit + " 支视频。";
+    note.classList.add("is-show");
+    if(hit === 0){
+      note.textContent = "暂未找到与“" + input.value.trim() + "”相关的视频，试试“城市”“教程”或“手作”。";
+    }
+    document.getElementById("jxx-videos").scrollIntoView({behavior:"smooth"});
+  }
+  $("#jxxSearchBtn").addEventListener("click", doSearch);
+  input.addEventListener("keydown", function(e){ if(e.key === "Enter"){ e.preventDefault(); doSearch(); } });
+  input.addEventListener("input", function(){
+    if(!input.value.trim()){
+      rows.forEach(function(r){ r.classList.remove("is-hide"); });
+      note.classList.remove("is-show");
+    }
+  });
+
+  /* 回到顶部 */
+  var topBtn = $("#jxxTopBtn");
+  function onScroll(){
+    topBtn.classList.toggle("is-show", window.scrollY > 520);
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+  /* 数据数字滚动 */
+  var counters = $$("[data-jxx-count]");
+  if("IntersectionObserver" in window && counters.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        var el = en.target;
+        var target = parseInt(el.getAttribute("data-jxx-count"),10);
+        var suffixEl = el.nextElementSibling ? el.nextElementSibling.textContent : "";
+        var isPct = suffixEl.indexOf("%") !== -1;
+        var start = performance.now(), dur = 1100;
+        function tick(now){
+          var p = Math.min((now-start)/dur, 1);
+          var v = Math.round(target * (1 - Math.pow(1-p,3)));
+          el.textContent = isPct ? (v + "%") : v.toLocaleString("en-US");
+          if(p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+        io.unobserve(el);
+      });
+    }, {threshold:.5});
+    counters.forEach(function(c){ io.observe(c); });
+  }
+
+  onScroll();
+})();
+</script>
+</body>
+  </html>
